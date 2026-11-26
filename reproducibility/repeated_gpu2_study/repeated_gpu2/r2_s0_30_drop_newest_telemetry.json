@@ -1,0 +1,302 @@
+[
+  {
+    "elapsed_s": 0.061102692037820816,
+    "values": "2026/10/26 16:28:31.707, 54, 576.46, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 2.1270697563886642,
+    "values": "2026/10/26 16:28:33.769, 54, 569.01, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 4.19435590878129,
+    "values": "2026/10/26 16:28:35.835, 55, 567.21, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 6.256910145282745,
+    "values": "2026/10/26 16:28:37.900, 54, 571.22, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 8.319023722782731,
+    "values": "2026/10/26 16:28:39.963, 54, 568.20, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 10.385254751890898,
+    "values": "2026/10/26 16:28:42.026, 54, 572.76, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 12.45061801187694,
+    "values": "2026/10/26 16:28:44.092, 54, 570.56, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 14.51866558007896,
+    "values": "2026/10/26 16:28:46.157, 54, 568.50, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 16.57899373397231,
+    "values": "2026/10/26 16:28:48.225, 54, 573.92, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 18.63999306410551,
+    "values": "2026/10/26 16:28:50.285, 54, 572.61, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 20.70690631121397,
+    "values": "2026/10/26 16:28:52.346, 54, 571.17, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 22.770767917856574,
+    "values": "2026/10/26 16:28:54.413, 53, 572.84, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 24.83267549611628,
+    "values": "2026/10/26 16:28:56.477, 54, 565.52, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 26.897936180233955,
+    "values": "2026/10/26 16:28:58.539, 54, 570.64, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 28.958187410607934,
+    "values": "2026/10/26 16:29:00.605, 53, 568.63, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 31.021984037011862,
+    "values": "2026/10/26 16:29:02.664, 54, 569.42, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 33.08619353547692,
+    "values": "2026/10/26 16:29:04.729, 54, 572.49, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 35.15031752549112,
+    "values": "2026/10/26 16:29:06.793, 53, 569.89, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 37.21407110989094,
+    "values": "2026/10/26 16:29:08.857, 53, 571.43, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 39.28060582280159,
+    "values": "2026/10/26 16:29:10.920, 54, 567.88, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 41.345912678167224,
+    "values": "2026/10/26 16:29:12.987, 54, 569.20, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 43.40996016189456,
+    "values": "2026/10/26 16:29:15.053, 53, 567.95, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 45.473017701879144,
+    "values": "2026/10/26 16:29:17.116, 53, 570.38, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 47.53180197626352,
+    "values": "2026/10/26 16:29:19.180, 54, 574.26, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 49.59651622734964,
+    "values": "2026/10/26 16:29:21.239, 54, 567.63, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 51.66470104083419,
+    "values": "2026/10/26 16:29:23.303, 53, 570.34, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 53.726248843595386,
+    "values": "2026/10/26 16:29:25.371, 53, 571.57, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 55.78903482481837,
+    "values": "2026/10/26 16:29:27.432, 54, 570.49, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 57.852123100310564,
+    "values": "2026/10/26 16:29:29.495, 53, 570.76, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  },
+  {
+    "elapsed_s": 59.9153340626508,
+    "values": "2026/10/26 16:29:31.558, 53, 568.17, 99, 4437",
+    "error": "",
+    "gpu2_compute_apps": [
+      "2573483, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 664 MiB",
+      "2573757, GPU-cd81f73e-e327-2f98-5828-97cf88152d23, <HOME>/anaconda3/envs/hanwoo/bin/python, 3636 MiB"
+    ],
+    "unexpected_gpu2_apps": []
+  }
+]

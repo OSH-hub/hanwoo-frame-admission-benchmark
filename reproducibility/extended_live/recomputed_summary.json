@@ -1,0 +1,189 @@
+{
+  "arm_count": 25,
+  "scheduled_arrivals": 127200,
+  "delivered": 115014,
+  "errors": 0,
+  "source_count": 3,
+  "decoded_frames": [
+    158,
+    600,
+    600
+  ],
+  "aggregate": [
+    {
+      "fps": 30,
+      "policy": "drop_newest",
+      "p99_min": 14.304125141352415,
+      "p99_max": 19.13913767784834,
+      "aoi_min": 26.66823439970201,
+      "aoi_max": 32.9782865132553,
+      "drop_min": 0.0,
+      "drop_max": 0.0
+    },
+    {
+      "fps": 30,
+      "policy": "fifo",
+      "p99_min": 14.253960903733969,
+      "p99_max": 19.216367918998003,
+      "aoi_min": 26.709513858946245,
+      "aoi_max": 33.039692994459536,
+      "drop_min": 0.0,
+      "drop_max": 0.0
+    },
+    {
+      "fps": 30,
+      "policy": "latest",
+      "p99_min": 14.351805839687586,
+      "p99_max": 19.146441500633955,
+      "aoi_min": 26.720128409033233,
+      "aoi_max": 32.98341558375019,
+      "drop_min": 0.0,
+      "drop_max": 0.0
+    },
+    {
+      "fps": 30,
+      "policy": "periodic",
+      "p99_min": 14.43322790786624,
+      "p99_max": 19.193268064409494,
+      "aoi_min": 26.69867846221648,
+      "aoi_max": 32.971083099764776,
+      "drop_min": 0.0,
+      "drop_max": 0.0
+    },
+    {
+      "fps": 80,
+      "policy": "drop_newest",
+      "p99_min": 14.838546589016932,
+      "p99_max": 34.938274808228016,
+      "aoi_min": 15.899526873541744,
+      "aoi_max": 36.174465564428964,
+      "drop_min": 0.0,
+      "drop_max": 26.104166666666668
+    },
+    {
+      "fps": 80,
+      "policy": "fifo",
+      "p99_min": 14.986878577619793,
+      "p99_max": 21594.09188810736,
+      "aoi_min": 15.933325701726318,
+      "aoi_max": 8038.503471367307,
+      "drop_min": 0.0,
+      "drop_max": 0.0
+    },
+    {
+      "fps": 80,
+      "policy": "latest",
+      "p99_min": 14.985601045191302,
+      "p99_max": 29.961908608675,
+      "aoi_min": 15.893943326573472,
+      "aoi_max": 31.792180252892653,
+      "drop_min": 0.0,
+      "drop_max": 26.395833333333332
+    },
+    {
+      "fps": 80,
+      "policy": "periodic",
+      "p99_min": 14.917057789862163,
+      "p99_max": 293.0788619816303,
+      "aoi_min": 15.923687318377599,
+      "aoi_max": 104.59162985579424,
+      "drop_min": 0.0,
+      "drop_max": 32.416666666666664
+    }
+  ],
+  "long_run": {
+    "label": "s1_80_latest_burst600",
+    "source": 1,
+    "fps": 80,
+    "policy": "latest",
+    "duration_s": 600,
+    "order": 1,
+    "n": 48000,
+    "delivered": 41547,
+    "dropped": 6453,
+    "drop_pct": 13.44375,
+    "errors": 0,
+    "queue_max": 1,
+    "p99_ms": 29.84259530901909,
+    "max_ms": 46.4131198823452,
+    "mean_service_ms": 10.061224933970026,
+    "miss_pct": 0.03369677714395745,
+    "periodic_keep_fraction": 0.6760213280583713,
+    "max_arrival_lateness_ms": 8.604846522212029,
+    "mean_aoi_ms": 21.692385244034575,
+    "max_aoi_ms": 64.21596929429506,
+    "common_window_start_ms": 16.987238079309464,
+    "common_window_end_ms": 599987.5,
+    "completion_gap_p99_ms": 19.755736365914345,
+    "max_replay_arrival_index_step": 3,
+    "scheduling_lateness_p99_ms": 0.5718727297498847,
+    "median_detections": 2.0,
+    "finish_ms": 600020.4949881881
+  },
+  "paired": [
+    {
+      "source": 0,
+      "comparison": "latest minus fifo",
+      "p99_difference_ms": -0.001277532428490602,
+      "aoi_difference_ms": -0.039382375152845484,
+      "drop_difference_percentage_points": 0.0
+    },
+    {
+      "source": 0,
+      "comparison": "latest minus drop_newest",
+      "p99_difference_ms": 0.14705445617437007,
+      "aoi_difference_ms": -0.005583546968271236,
+      "drop_difference_percentage_points": 0.0
+    },
+    {
+      "source": 0,
+      "comparison": "latest minus periodic",
+      "p99_difference_ms": 0.06854325532913919,
+      "aoi_difference_ms": -0.02974399180412668,
+      "drop_difference_percentage_points": 0.0
+    },
+    {
+      "source": 1,
+      "comparison": "latest minus fifo",
+      "p99_difference_ms": -21564.129979498684,
+      "aoi_difference_ms": -8006.711291114414,
+      "drop_difference_percentage_points": 26.395833333333332
+    },
+    {
+      "source": 1,
+      "comparison": "latest minus drop_newest",
+      "p99_difference_ms": -4.976366199553016,
+      "aoi_difference_ms": -4.382285311536311,
+      "drop_difference_percentage_points": 0.2916666666666643
+    },
+    {
+      "source": 1,
+      "comparison": "latest minus periodic",
+      "p99_difference_ms": 3.2568214274942804,
+      "aoi_difference_ms": 3.606410225268803,
+      "drop_difference_percentage_points": -6.020833333333332
+    },
+    {
+      "source": 2,
+      "comparison": "latest minus fifo",
+      "p99_difference_ms": -5139.554433096201,
+      "aoi_difference_ms": -2364.677810214676,
+      "drop_difference_percentage_points": 11.041666666666666
+    },
+    {
+      "source": 2,
+      "comparison": "latest minus drop_newest",
+      "p99_difference_ms": -4.525246508419524,
+      "aoi_difference_ms": -1.848814738148345,
+      "drop_difference_percentage_points": -0.08333333333333393
+    },
+    {
+      "source": 2,
+      "comparison": "latest minus periodic",
+      "p99_difference_ms": -263.83006980642676,
+      "aoi_difference_ms": -80.12738526733615,
+      "drop_difference_percentage_points": -1.3125
+    }
+  ],
+  "scope": "Heterogeneous source blocks; descriptive ranges, no device-independent CI; hypothetical window retention only."
+}

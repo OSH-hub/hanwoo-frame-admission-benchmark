@@ -1,0 +1,67 @@
+[
+  {
+    "file": "results\\latency_per_frame.csv",
+    "sha256": "259da38e3dfd8735988c43d5689a3715cb68edc4b2d575c2682268f91abfb5e0",
+    "bytes": 8582
+  },
+  {
+    "file": "results_fixedC\\run_1\\per_frame_baseline.csv",
+    "sha256": "9da9598a51e3a87b92eff8b4976591b01e36435853d860390a1b6db19b2ed65b",
+    "bytes": 26017
+  },
+  {
+    "file": "results_fixedC\\run_1\\per_frame_dats.csv",
+    "sha256": "faa7de3316cda4c45cc33d7fd767a432f610a4ef6c8e04fd915a6faf730b2a85",
+    "bytes": 22606
+  },
+  {
+    "file": "results_fixedC\\run_2\\per_frame_baseline.csv",
+    "sha256": "2ce9062478bfae5d7b95324fa2826d5dbb46ade377caf823a604175902472575",
+    "bytes": 26277
+  },
+  {
+    "file": "results_fixedC\\run_2\\per_frame_dats.csv",
+    "sha256": "94a028f2a5bf6103adaa71b4736e822a0318cced8246e0083ac489486b40ebef",
+    "bytes": 17337
+  },
+  {
+    "file": "results_fixedC\\run_3\\per_frame_baseline.csv",
+    "sha256": "4684594db67264b0c0c2942e9dce18a2785ae97e606978ccdcbc9c6b058d75df",
+    "bytes": 26221
+  },
+  {
+    "file": "results_fixedC\\run_3\\per_frame_dats.csv",
+    "sha256": "bb6da70951ac7c0d92a3acea3f0901cdea89eff544bd942d452b920fb8e2ae76",
+    "bytes": 17061
+  },
+  {
+    "file": "results_fixedC\\run_4\\per_frame_baseline.csv",
+    "sha256": "21e623a2c3547f3e4820861fe3213ce47349de5f935c37603ba82d0eaf14964d",
+    "bytes": 26166
+  },
+  {
+    "file": "results_fixedC\\run_4\\per_frame_dats.csv",
+    "sha256": "90d1abf924616741a58eb269198ce5fc86be07c52e0552edf16952c62a35f84e",
+    "bytes": 19094
+  },
+  {
+    "file": "results_fixedC\\run_5\\per_frame_baseline.csv",
+    "sha256": "ae17ca2f61fad5a93a5fc934931ca1d04135632ae2b3104896eeb436bdfa86fa",
+    "bytes": 26308
+  },
+  {
+    "file": "results_fixedC\\run_5\\per_frame_dats.csv",
+    "sha256": "856c584d7660ceb63c5c288238df079732d979d0ac3935fc39d10d0c2744fb37",
+    "bytes": 21442
+  },
+  {
+    "file": "results\\live_ab_per_frame_baseline.csv",
+    "sha256": "61b41758670d35f630fdf15b40933d67061b7a099bf47dbb7b9cd5ef6e6399ae",
+    "bytes": 51118
+  },
+  {
+    "file": "results\\live_ab_per_frame_dats.csv",
+    "sha256": "bc9c57c092ffd75d06595823351d1db1a116baa50891476e32c131dc8c7d8b0f",
+    "bytes": 51071
+  }
+]

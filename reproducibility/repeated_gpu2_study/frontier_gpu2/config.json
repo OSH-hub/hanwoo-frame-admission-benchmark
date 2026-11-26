@@ -1,0 +1,384 @@
+{
+  "calibration_n_per_source": 120,
+  "design": [
+    {
+      "admission_fraction": 0.95,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r1_s1_80_periodic_f95",
+      "order": 1,
+      "policy": "periodic",
+      "replicate": 1,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.5,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r1_s1_80_drop_newest_f50",
+      "order": 2,
+      "policy": "drop_newest",
+      "replicate": 1,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.65,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r1_s1_80_latest_f65",
+      "order": 3,
+      "policy": "latest",
+      "replicate": 1,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.65,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r1_s1_80_drop_newest_f65",
+      "order": 4,
+      "policy": "drop_newest",
+      "replicate": 1,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.5,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r1_s1_80_periodic_f50",
+      "order": 5,
+      "policy": "periodic",
+      "replicate": 1,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.95,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r1_s1_80_drop_newest_f95",
+      "order": 6,
+      "policy": "drop_newest",
+      "replicate": 1,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.5,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r1_s1_80_latest_f50",
+      "order": 7,
+      "policy": "latest",
+      "replicate": 1,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.8,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r1_s1_80_drop_newest_f80",
+      "order": 8,
+      "policy": "drop_newest",
+      "replicate": 1,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.8,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r1_s1_80_latest_f80",
+      "order": 9,
+      "policy": "latest",
+      "replicate": 1,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.95,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r1_s1_80_latest_f95",
+      "order": 10,
+      "policy": "latest",
+      "replicate": 1,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.8,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r1_s1_80_periodic_f80",
+      "order": 11,
+      "policy": "periodic",
+      "replicate": 1,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.65,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r1_s1_80_periodic_f65",
+      "order": 12,
+      "policy": "periodic",
+      "replicate": 1,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.65,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r2_s1_80_latest_f65",
+      "order": 13,
+      "policy": "latest",
+      "replicate": 2,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.95,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r2_s1_80_latest_f95",
+      "order": 14,
+      "policy": "latest",
+      "replicate": 2,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.65,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r2_s1_80_drop_newest_f65",
+      "order": 15,
+      "policy": "drop_newest",
+      "replicate": 2,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.8,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r2_s1_80_drop_newest_f80",
+      "order": 16,
+      "policy": "drop_newest",
+      "replicate": 2,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.95,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r2_s1_80_drop_newest_f95",
+      "order": 17,
+      "policy": "drop_newest",
+      "replicate": 2,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.65,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r2_s1_80_periodic_f65",
+      "order": 18,
+      "policy": "periodic",
+      "replicate": 2,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.5,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r2_s1_80_latest_f50",
+      "order": 19,
+      "policy": "latest",
+      "replicate": 2,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.8,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r2_s1_80_latest_f80",
+      "order": 20,
+      "policy": "latest",
+      "replicate": 2,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.5,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r2_s1_80_drop_newest_f50",
+      "order": 21,
+      "policy": "drop_newest",
+      "replicate": 2,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.95,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r2_s1_80_periodic_f95",
+      "order": 22,
+      "policy": "periodic",
+      "replicate": 2,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.5,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r2_s1_80_periodic_f50",
+      "order": 23,
+      "policy": "periodic",
+      "replicate": 2,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.8,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r2_s1_80_periodic_f80",
+      "order": 24,
+      "policy": "periodic",
+      "replicate": 2,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.5,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r3_s1_80_periodic_f50",
+      "order": 25,
+      "policy": "periodic",
+      "replicate": 3,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.95,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r3_s1_80_latest_f95",
+      "order": 26,
+      "policy": "latest",
+      "replicate": 3,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.95,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r3_s1_80_drop_newest_f95",
+      "order": 27,
+      "policy": "drop_newest",
+      "replicate": 3,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.95,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r3_s1_80_periodic_f95",
+      "order": 28,
+      "policy": "periodic",
+      "replicate": 3,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.8,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r3_s1_80_periodic_f80",
+      "order": 29,
+      "policy": "periodic",
+      "replicate": 3,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.5,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r3_s1_80_latest_f50",
+      "order": 30,
+      "policy": "latest",
+      "replicate": 3,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.8,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r3_s1_80_drop_newest_f80",
+      "order": 31,
+      "policy": "drop_newest",
+      "replicate": 3,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.65,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r3_s1_80_drop_newest_f65",
+      "order": 32,
+      "policy": "drop_newest",
+      "replicate": 3,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.8,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r3_s1_80_latest_f80",
+      "order": 33,
+      "policy": "latest",
+      "replicate": 3,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.5,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r3_s1_80_drop_newest_f50",
+      "order": 34,
+      "policy": "drop_newest",
+      "replicate": 3,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.65,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r3_s1_80_latest_f65",
+      "order": 35,
+      "policy": "latest",
+      "replicate": 3,
+      "source": 1
+    },
+    {
+      "admission_fraction": 0.65,
+      "duration_s": 60,
+      "fps": 80,
+      "label": "frontier_r3_s1_80_periodic_f65",
+      "order": 36,
+      "policy": "periodic",
+      "replicate": 3,
+      "source": 1
+    }
+  ],
+  "gpu_uuid": "GPU-cd81f73e-e327-2f98-5828-97cf88152d23",
+  "limitation": "Same host/GPU across all repeats; RAM replay; host CPU/I/O can be shared; source loops are not independent farms.",
+  "mode": "frontier",
+  "model_sha256": "32a943053c1ac83159bb867f0f2dc4ca3e92310af5a31978348bc0b59499f84a",
+  "per_arm_warmup": 0,
+  "physical_gpu_index": 2,
+  "pre_tenant_warmup": 30,
+  "precision": "FP32",
+  "script_sha256": "b9e3a686ea21d01900be2d5259d2b8c9bb1d23a322b810b1af4b32ba74023f5c",
+  "seed": 20261026,
+  "source_frame_sha256": [
+    "b6b9f81da938b46b35c564b0a1f8f7ff1a319603f9cc0bbbdbb522de9e0b80a8",
+    "a3c07a30a185ca85b7b8c047db4c2a9d2fae1ff9d730f75de6d44786a6a8488d",
+    "55a98cdb2d95734eca9a5f6dce5453daeaf591c3d8eaf666027120f7fb5cd93e"
+  ],
+  "source_model_match_v2": true,
+  "tenant_matrix_dimension": 16384,
+  "tf32_cudnn": true,
+  "tf32_matmul": false
+}

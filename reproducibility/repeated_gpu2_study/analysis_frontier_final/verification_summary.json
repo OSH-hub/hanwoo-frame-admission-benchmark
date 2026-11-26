@@ -1,0 +1,366 @@
+{
+  "mode": "frontier",
+  "provisional_80fps_only": false,
+  "arms": 36,
+  "scheduled": 172800,
+  "delivered": 116811,
+  "dropped": 55989,
+  "errors": 0,
+  "physical_gpu_count": 1,
+  "fresh_repetitions": 3,
+  "source_count": 1,
+  "inference_limit": "Conditional within one GPU. Repeats are runs, not frames, farms or independent GPUs. t intervals use df2; mean/range are primary descriptive summaries.",
+  "loss_limit": "Equal offered pre-admission fractions do not ensure equal final loss. Only exact retained-count matches are flagged; no causal equal-loss superiority is inferred.",
+  "logger_condition": "Ultralytics emits one half-deprecation warning per predict call, as in v2; logged timing includes this software path.",
+  "throughput_definitions": "delivered_rate_to_last_completion_fps uses producer origin to final recorded completion; completion_rate_within_offer_window_fps uses origin to last scheduled arrival; bookkeeping_inclusive_run_rate_fps additionally includes monitor join/file writes and is not inference throughput.",
+  "sampled_gpu2_pids": [
+    2596986,
+    2597065
+  ],
+  "process_monitor_limit": "Two consistent expected GPU2 processes were present in every saved sample and no additional process was observed. Samples are about two seconds apart; process-query stderr/returncode were not stored, so continuous process isolation is not proved.",
+  "config_sha256": "fd53b2df87bb6908c209777a71457e4b4a451e56e0f4e22f8b9585322f270f79",
+  "model_sha256": "32a943053c1ac83159bb867f0f2dc4ca3e92310af5a31978348bc0b59499f84a",
+  "source_frame_sha256": [
+    "b6b9f81da938b46b35c564b0a1f8f7ff1a319603f9cc0bbbdbb522de9e0b80a8",
+    "a3c07a30a185ca85b7b8c047db4c2a9d2fae1ff9d730f75de6d44786a6a8488d",
+    "55a98cdb2d95734eca9a5f6dce5453daeaf591c3d8eaf666027120f7fb5cd93e"
+  ],
+  "analysis_script_sha256": "53a41dc503d2b5a0673dd611d93d7129d0e7c1c18bcbf6123d57999b7b967c96",
+  "analysis_environment": {
+    "python": "3.11.9",
+    "numpy": "2.4.6",
+    "pandas": "3.0.6",
+    "scipy": "1.17.1",
+    "matplotlib": "3.11.0"
+  },
+  "GPU2_temperature_range_c": [
+    49.0,
+    55.0
+  ],
+  "checks": [
+    {
+      "label": "frontier_r1_s1_80_periodic_f95",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r1_s1_80_drop_newest_f50",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r1_s1_80_latest_f65",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r1_s1_80_drop_newest_f65",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r1_s1_80_periodic_f50",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r1_s1_80_drop_newest_f95",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r1_s1_80_latest_f50",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r1_s1_80_drop_newest_f80",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r1_s1_80_latest_f80",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r1_s1_80_latest_f95",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r1_s1_80_periodic_f80",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r1_s1_80_periodic_f65",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r2_s1_80_latest_f65",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r2_s1_80_latest_f95",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r2_s1_80_drop_newest_f65",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r2_s1_80_drop_newest_f80",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r2_s1_80_drop_newest_f95",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r2_s1_80_periodic_f65",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r2_s1_80_latest_f50",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r2_s1_80_latest_f80",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r2_s1_80_drop_newest_f50",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r2_s1_80_periodic_f95",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r2_s1_80_periodic_f50",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r2_s1_80_periodic_f80",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r3_s1_80_periodic_f50",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r3_s1_80_latest_f95",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r3_s1_80_drop_newest_f95",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r3_s1_80_periodic_f95",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r3_s1_80_periodic_f80",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r3_s1_80_latest_f50",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r3_s1_80_drop_newest_f80",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r3_s1_80_drop_newest_f65",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r3_s1_80_latest_f80",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r3_s1_80_drop_newest_f50",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r3_s1_80_latest_f65",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    },
+    {
+      "label": "frontier_r3_s1_80_periodic_f65",
+      "frame_partition": true,
+      "all_timestamp_identities": true,
+      "periodic_frozen_budget": true,
+      "no_inference_error": true,
+      "two_consistent_GPU2_processes_observed_in_every_sample": true,
+      "no_foreign_gpu2_process_in_samples": true
+    }
+  ]
+}

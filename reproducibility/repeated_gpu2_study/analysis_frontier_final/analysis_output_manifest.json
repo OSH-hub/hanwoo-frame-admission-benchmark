@@ -1,0 +1,42 @@
+[
+  {
+    "name": "all_arm_metrics.csv",
+    "bytes": 15860,
+    "sha256": "87cec0d31cd75e7add7351542d5df9d28f7912da0bb158182a0e717d5c4dd06c"
+  },
+  {
+    "name": "gpu2_telemetry.csv",
+    "bytes": 106585,
+    "sha256": "1d077f9a1b0ed2d2a7cf297b44fac434676b63c966665ecd091ba995757c0694"
+  },
+  {
+    "name": "loss_latency_sensitivity.pdf",
+    "bytes": 68619,
+    "sha256": "990ea530b974e9e93c66ee26b589002e7172a7fefb7ecbe99c4f4508ced517ee"
+  },
+  {
+    "name": "loss_latency_sensitivity.png",
+    "bytes": 369340,
+    "sha256": "28dbe717d8ad43d4233e1d7cdfda871cc4ad792d4ae8be03107a43dbe5999916"
+  },
+  {
+    "name": "loss_latency_sensitivity.svg",
+    "bytes": 78659,
+    "sha256": "17ef011fe03ae41aa94c3ceac4fe0148078731f2517aeff8c343b93aed8966a7"
+  },
+  {
+    "name": "paired_run_differences.csv",
+    "bytes": 5648,
+    "sha256": "811bebc45e15c27ac1efad3fd96c53c6b1f8edeb983d7826d2e6705074e14e7d"
+  },
+  {
+    "name": "repeated_mean_range_tCI.csv",
+    "bytes": 14565,
+    "sha256": "e1a8b11ce3ac4ab532139f08110b5e05549b6c648d1826511bbcad42899b8e26"
+  },
+  {
+    "name": "verification_summary.json",
+    "bytes": 14158,
+    "sha256": "7bb1bdc4993be0a5da4d19f46c5eba41b295db30f7aff625c1b76aa76b767dd5"
+  }
+]

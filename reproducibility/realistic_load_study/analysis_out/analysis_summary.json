@@ -1,0 +1,19 @@
+{
+  "arms": 120,
+  "cells": 40,
+  "total_arrivals": 442800,
+  "total_delivered": 370471,
+  "total_errors": 0,
+  "excluded_arms": [
+    {
+      "run": "stage1_gpu2",
+      "label": "s1_r2_B_k1_15_drop_newest",
+      "order": 52
+    }
+  ],
+  "runs": [
+    "stage1_gpu2",
+    "stage1b_gpu2",
+    "stage2_gpu2"
+  ]
+}

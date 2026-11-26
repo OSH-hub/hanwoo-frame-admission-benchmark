@@ -1,0 +1,36 @@
+P2 extension protocol fixed before extended evaluation, 26 October 2026
+
+Use GPU 1. Do not modify original source videos, detector weights, or old results.
+Three source blocks: first lexicographic Cows2021 RGB video in the NAS ZIP;
+June 2025 NVR channel 1; November 2025 NVR channel 2. Decode at most the first
+600 frames of each, resize to 640x360, and cycle in RAM. This is artificial
+inference replay, not native video acquisition or animal accuracy evaluation.
+
+Independent 120-frame service calibration per source under a 16384-dimension
+FP32 matrix co-tenant. Periodic admission fraction is min(1,0.95/(fps*mean_s)).
+Fix this fraction before evaluating policies; do not optimize to observed results.
+
+For each source and rate 30/80fps, run FIFO, latest-pending, one-pending drop-newest,
+and periodic admission for 60 seconds. Seed policy order 20261026 before all arms.
+The source blocks are heterogeneous paired comparisons, not three independent
+device replications. Report all 24 arms individually. No result-based exclusions.
+After these, run latest-pending on source 1 at 80fps for 600 seconds with the
+same co-tenant alternating five seconds busy and five seconds idle. This single
+stability run is not a paired comparison or evidence of hour-long deployment.
+
+Record every arrival, delivered-frame start/finish/service, every discard,
+inference errors, queue maximum, and two-second GPU telemetry. Delivered+discarded
+must equal scheduled arrivals; latest and drop-newest pending depth <=1.
+Inference errors remain in records and stop execution for diagnosis.
+
+Primary descriptive endpoints: delivered-latency p99, drop fraction, deadline
+miss fraction among delivered frames. Secondary: common-window time-average AoI,
+completion gaps, offered-clock jitter, temperature/power, and retention of all
+possible windows of 1,2,4,8,16 scheduled frames. Equal-count evenly spaced subsets
+provide a retrospective temporal-coverage benchmark; this does not simulate real
+animal events or constitute an independent live latency experiment.
+
+Compare latest with drop-newest and periodic policies including actual drop rates.
+Do not claim equal cost unless observed counts match; provide exact equal-count
+temporal coverage only for the retrospective window diagnostic. No clinical,
+animal-behavior, farm-generalization or hard real-time guarantee is inferred.

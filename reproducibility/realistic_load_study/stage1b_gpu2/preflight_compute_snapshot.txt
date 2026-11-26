@@ -1,0 +1,2 @@
+3440087, GPU-8791e706-3625-7a4a-603f-6029072f9900, <HOME>/anaconda3/envs/detection/bin/python, 7458 MiB
+3443030, GPU-a78fe4dd-30f8-4971-7a37-5d96998ed30f, <HOME>/anaconda3/envs/detection/bin/python, 27006 MiB

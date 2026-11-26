@@ -1,0 +1,277 @@
+{
+  "calibration_n": 120,
+  "channels": [
+    "ch02",
+    "ch01",
+    "ch03",
+    "ch04",
+    "ch05"
+  ],
+  "design": [
+    {
+      "cameras": 5,
+      "detector": "A",
+      "duration_s": 60,
+      "label": "s2_r1_A_k5_15_latest",
+      "order": 1,
+      "policy": "latest",
+      "rate": 15,
+      "replicate": 1
+    },
+    {
+      "cameras": 3,
+      "detector": "A",
+      "duration_s": 60,
+      "label": "s2_r1_A_k3_30_latest",
+      "order": 2,
+      "policy": "latest",
+      "rate": 30,
+      "replicate": 1
+    },
+    {
+      "cameras": 5,
+      "detector": "A",
+      "duration_s": 60,
+      "label": "s2_r1_A_k5_15_fifo",
+      "order": 3,
+      "policy": "fifo",
+      "rate": 15,
+      "replicate": 1
+    },
+    {
+      "cameras": 5,
+      "detector": "A",
+      "duration_s": 60,
+      "label": "s2_r1_A_k5_15_drop_newest",
+      "order": 4,
+      "policy": "drop_newest",
+      "rate": 15,
+      "replicate": 1
+    },
+    {
+      "cameras": 3,
+      "detector": "A",
+      "duration_s": 60,
+      "label": "s2_r1_A_k3_30_drop_newest",
+      "order": 5,
+      "policy": "drop_newest",
+      "rate": 30,
+      "replicate": 1
+    },
+    {
+      "cameras": 3,
+      "detector": "A",
+      "duration_s": 60,
+      "label": "s2_r1_A_k3_30_fifo",
+      "order": 6,
+      "policy": "fifo",
+      "rate": 30,
+      "replicate": 1
+    },
+    {
+      "cameras": 5,
+      "detector": "A",
+      "duration_s": 60,
+      "label": "s2_r1_A_k5_15_periodic",
+      "order": 7,
+      "policy": "periodic",
+      "rate": 15,
+      "replicate": 1
+    },
+    {
+      "cameras": 3,
+      "detector": "A",
+      "duration_s": 60,
+      "label": "s2_r1_A_k3_30_periodic",
+      "order": 8,
+      "policy": "periodic",
+      "rate": 30,
+      "replicate": 1
+    },
+    {
+      "cameras": 3,
+      "detector": "A",
+      "duration_s": 60,
+      "label": "s2_r2_A_k3_30_drop_newest",
+      "order": 9,
+      "policy": "drop_newest",
+      "rate": 30,
+      "replicate": 2
+    },
+    {
+      "cameras": 3,
+      "detector": "A",
+      "duration_s": 60,
+      "label": "s2_r2_A_k3_30_latest",
+      "order": 10,
+      "policy": "latest",
+      "rate": 30,
+      "replicate": 2
+    },
+    {
+      "cameras": 5,
+      "detector": "A",
+      "duration_s": 60,
+      "label": "s2_r2_A_k5_15_drop_newest",
+      "order": 11,
+      "policy": "drop_newest",
+      "rate": 15,
+      "replicate": 2
+    },
+    {
+      "cameras": 5,
+      "detector": "A",
+      "duration_s": 60,
+      "label": "s2_r2_A_k5_15_periodic",
+      "order": 12,
+      "policy": "periodic",
+      "rate": 15,
+      "replicate": 2
+    },
+    {
+      "cameras": 5,
+      "detector": "A",
+      "duration_s": 60,
+      "label": "s2_r2_A_k5_15_fifo",
+      "order": 13,
+      "policy": "fifo",
+      "rate": 15,
+      "replicate": 2
+    },
+    {
+      "cameras": 3,
+      "detector": "A",
+      "duration_s": 60,
+      "label": "s2_r2_A_k3_30_periodic",
+      "order": 14,
+      "policy": "periodic",
+      "rate": 30,
+      "replicate": 2
+    },
+    {
+      "cameras": 3,
+      "detector": "A",
+      "duration_s": 60,
+      "label": "s2_r2_A_k3_30_fifo",
+      "order": 15,
+      "policy": "fifo",
+      "rate": 30,
+      "replicate": 2
+    },
+    {
+      "cameras": 5,
+      "detector": "A",
+      "duration_s": 60,
+      "label": "s2_r2_A_k5_15_latest",
+      "order": 16,
+      "policy": "latest",
+      "rate": 15,
+      "replicate": 2
+    },
+    {
+      "cameras": 5,
+      "detector": "A",
+      "duration_s": 60,
+      "label": "s2_r3_A_k5_15_fifo",
+      "order": 17,
+      "policy": "fifo",
+      "rate": 15,
+      "replicate": 3
+    },
+    {
+      "cameras": 5,
+      "detector": "A",
+      "duration_s": 60,
+      "label": "s2_r3_A_k5_15_periodic",
+      "order": 18,
+      "policy": "periodic",
+      "rate": 15,
+      "replicate": 3
+    },
+    {
+      "cameras": 5,
+      "detector": "A",
+      "duration_s": 60,
+      "label": "s2_r3_A_k5_15_latest",
+      "order": 19,
+      "policy": "latest",
+      "rate": 15,
+      "replicate": 3
+    },
+    {
+      "cameras": 3,
+      "detector": "A",
+      "duration_s": 60,
+      "label": "s2_r3_A_k3_30_drop_newest",
+      "order": 20,
+      "policy": "drop_newest",
+      "rate": 30,
+      "replicate": 3
+    },
+    {
+      "cameras": 3,
+      "detector": "A",
+      "duration_s": 60,
+      "label": "s2_r3_A_k3_30_periodic",
+      "order": 21,
+      "policy": "periodic",
+      "rate": 30,
+      "replicate": 3
+    },
+    {
+      "cameras": 3,
+      "detector": "A",
+      "duration_s": 60,
+      "label": "s2_r3_A_k3_30_fifo",
+      "order": 22,
+      "policy": "fifo",
+      "rate": 30,
+      "replicate": 3
+    },
+    {
+      "cameras": 3,
+      "detector": "A",
+      "duration_s": 60,
+      "label": "s2_r3_A_k3_30_latest",
+      "order": 23,
+      "policy": "latest",
+      "rate": 30,
+      "replicate": 3
+    },
+    {
+      "cameras": 5,
+      "detector": "A",
+      "duration_s": 60,
+      "label": "s2_r3_A_k5_15_drop_newest",
+      "order": 24,
+      "policy": "drop_newest",
+      "rate": 15,
+      "replicate": 3
+    }
+  ],
+  "full_design_cells": 24,
+  "gpu_uuid": "GPU-cd81f73e-e327-2f98-5828-97cf88152d23",
+  "mode": "stage2",
+  "model_sha256": {
+    "A": "32a943053c1ac83159bb867f0f2dc4ca3e92310af5a31978348bc0b59499f84a",
+    "B": "12f59237e44af8dff80c4cfd45cc49bca6a35541d622134905b2853967079ce5"
+  },
+  "per_arm_warmup": 0,
+  "pre_tenant_warmup": 30,
+  "precision": "FP32",
+  "protocol_sha256": "fb2a505b6326f11c8998c9cb1576f85dd95b9a6f04eb423a43736e38d89e8cb4",
+  "script_sha256": "cc502c7b8fc9f03fa3cd9574741529f8cf62d29dc55c1321b22d0df9d4ee662e",
+  "seed": 20261115,
+  "shared_gpu_allowed": false,
+  "source_frame_sha256": [
+    "55a98cdb2d95734eca9a5f6dce5453daeaf591c3d8eaf666027120f7fb5cd93e",
+    "01043952ad26b1a25211ca450b7de5b064bc26140a718177f40318640d68aa47",
+    "4ef21496f82a26e962d11788090458fd32a90fe36cd66f52830115b82cef60f1",
+    "15070b2bf0944ef8e2ef817ce0893a8e96742df71fb8c6d16581d6bff7594396",
+    "a1f7f9a7258e61abd55310005c0070e9e90dbb66707a95b4822aa0bb2c659713"
+  ],
+  "start_order": 1,
+  "tenant": "training",
+  "tf32_cudnn": true,
+  "tf32_matmul": false
+}

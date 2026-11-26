@@ -1,0 +1,174 @@
+{
+  "run_timestamp": "20260619_105521",
+  "device": "NVIDIA GeForce RTX 4070 Ti",
+  "model": "<PROJECT_ROOT>\\detector_baseline\\models\\best.pt",
+  "script_version": "v3_fixed_consumer",
+  "contention_config": {
+    "dim_used": 2688,
+    "auto_tuned": false,
+    "co_tenant_ok": true
+  },
+  "calibration": {
+    "mu_baseline_ms": 8.908,
+    "mu_contended_ms": 56.353,
+    "C_achieved": 6.326,
+    "rho_achieved": 1.6906,
+    "overloaded": true,
+    "s_p99_contended_ms": 85.12,
+    "formal_L_max_ms": 136.906,
+    "formal_drop_min_pct": 6.45
+  },
+  "sim_at_live_C": {
+    "baseline": {
+      "C": 6.3260611252596615,
+      "rho_contended": 1.6906,
+      "overloaded": true,
+      "miss_pct": 65.07,
+      "drop_pct": 0.0,
+      "p99_ms": 11480.56,
+      "p95_ms": 10782.55,
+      "max_ms": 11653.54,
+      "mean_ms": 3818.62
+    },
+    "dats": {
+      "C": 6.3260611252596615,
+      "rho_contended": 1.6906,
+      "overloaded": true,
+      "miss_pct": 19.44,
+      "drop_pct": 17.33,
+      "p99_ms": 68.14,
+      "p95_ms": 59.35,
+      "max_ms": 87.73,
+      "mean_ms": 18.19
+    }
+  },
+  "sim_stress_C4": {
+    "baseline": {
+      "miss_pct": 36.67,
+      "p99_ms": 1242.38,
+      "max_ms": 1256.04,
+      "drop_pct": 0.0
+    },
+    "dats": {
+      "miss_pct": 17.75,
+      "p99_ms": 44.07,
+      "max_ms": 55.47,
+      "drop_pct": 14.0
+    },
+    "formal_L_max_ms": 77.608
+  },
+  "gpu_monitor": {
+    "samples": 177,
+    "peak_util_pct": 99.0,
+    "mean_util_pct": 97.2,
+    "mean_power_w": 193.12,
+    "contention_samples_pct": 100.0
+  },
+  "live_results": {
+    "baseline": {
+      "arm": "baseline",
+      "use_dats": false,
+      "n_scheduled": 300,
+      "delivered": 300,
+      "dropped": 0,
+      "invariant_ok": true,
+      "oom_hit": false,
+      "consumer_error": null,
+      "drop_rate_pct": 0.0,
+      "deadline_misses": 300,
+      "deadline_miss_rate_pct": 100.0,
+      "e2e_mean_ms": 3540.495,
+      "e2e_p50_ms": 3809.242,
+      "e2e_p90_ms": 6450.857,
+      "e2e_p95_ms": 6796.63,
+      "e2e_p99_ms": 7001.092,
+      "e2e_max_ms": 7046.647,
+      "service_mean_ms": 53.934,
+      "gpu_util_mean_pct": 97.4,
+      "power_mean_w": 194.72,
+      "contended_frames": 300,
+      "contended_pct": 100.0,
+      "s_hat_init_ms": 56.35255250381306
+    },
+    "dats": {
+      "arm": "dats",
+      "use_dats": true,
+      "n_scheduled": 300,
+      "delivered": 198,
+      "dropped": 102,
+      "invariant_ok": true,
+      "oom_hit": false,
+      "consumer_error": null,
+      "drop_rate_pct": 34.0,
+      "deadline_misses": 196,
+      "deadline_miss_rate_pct": 98.99,
+      "e2e_mean_ms": 99.075,
+      "e2e_p50_ms": 100.787,
+      "e2e_p90_ms": 121.513,
+      "e2e_p95_ms": 126.103,
+      "e2e_p99_ms": 131.166,
+      "e2e_max_ms": 137.587,
+      "service_mean_ms": 48.167,
+      "gpu_util_mean_pct": 97.8,
+      "power_mean_w": 198.12,
+      "contended_frames": 198,
+      "contended_pct": 100.0,
+      "s_hat_init_ms": 56.35255250381306
+    }
+  },
+  "sim_vs_live": {
+    "note": "Sim at live C=6.326, rho'=1.6906",
+    "baseline_miss_pct": {
+      "sim": 65.07,
+      "live": 100.0,
+      "delta": 34.93
+    },
+    "baseline_p99_ms": {
+      "sim": 11480.56,
+      "live": 7001.092,
+      "delta": -4479.47
+    },
+    "dats_miss_pct": {
+      "sim": 19.44,
+      "live": 98.99,
+      "delta": 79.55
+    },
+    "dats_p99_ms": {
+      "sim": 68.14,
+      "live": 131.166,
+      "delta": 63.03
+    },
+    "vs_stress_sim_C4": {
+      "sim_baseline_p99_ms": 1242.38,
+      "sim_dats_p99_ms": 44.07,
+      "live_baseline_p99_ms": 7001.092,
+      "live_dats_p99_ms": 131.166
+    }
+  },
+  "formal_bound_check": {
+    "L_max_live_ms": 136.906,
+    "DATS_p99_ms": 131.166,
+    "DATS_max_ms": 137.587,
+    "tolerance_ms": 10.0,
+    "bound_p99_holds": true,
+    "bound_max_holds": true
+  },
+  "success_criteria": {
+    "rho_in_1_0_to_1_35": false,
+    "baseline_p99_gt_100ms": true,
+    "dats_p99_within_bound": true,
+    "dats_drop_above_min": true,
+    "invariant_ok": true,
+    "dats_delivered_ge_50pct": true,
+    "overall_stress_regime_confirmed": false
+  },
+  "fallback_flag": {
+    "dats_arm_failed": false,
+    "baseline_divergence_confirmed": true,
+    "fallback_note": "DATS arm succeeded."
+  },
+  "n_frames_per_arm": 300,
+  "arrival_fps": 30.0,
+  "sla_ms": 33.0,
+  "dats_alpha": 0.8
+}

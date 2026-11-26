@@ -1,0 +1,58 @@
+P2 GPU2 repeated benchmark and separate admission-fraction sensitivity grid
+Fixed on 26 October 2026 before the full measured evaluation; all results retained.
+
+Existing v2 and source/model files remain read-only. Do not combine v2 GPU1 arms
+with v4 GPU2 repeats. Three v4 repetitions are new physical executions on the
+same GPU, not independent hardware, farms, or animal-event replications.
+
+CUDA_VISIBLE_DEVICES=2 and physical UUID GPU-cd81f73e-e327-2f98-5828-97cf88152d23.
+Reject startup if an unrelated compute process already uses GPU2. Every arm
+records GPU2 process metadata and flags foreign processes, without terminating
+them. GPU0 and GPU1 are not modified or used by this benchmark. The host CPU,
+memory and storage can be shared with other projects; this is a limitation.
+
+Retain v2 source paths, resize, first decoded frame counts and checkpoint:
+Cows2021 158 frames; June NVR 600 frames; November NVR 600 frames, all 640x360.
+Verify decoded frame hashes and model hash against completed v2 metadata.
+YOLO imgsz640, batch1, conf0.25, IoU0.7, max_det300, half=False, FP32.
+FP32 matrix co-tenant dimension16384 with seed20261026. Warm up detector with30
+frames before tenant startup, then calibrate120 service calls per source under
+the tenant. Torch and OpenCV CPU threads are1. Synchronize CUDA after inference.
+TF32 matmul=False and cuDNN=True are recorded explicitly. No per-arm warm-up.
+
+Full design: 3sources x 2arrival rates(80,30) x 4policies x 3fresh repetitions,
+72arms of60s. Complete all36 arms at80fps before36 at30fps. Within each rate
+and repetition, randomize the12 source-policy cells with seed20261026. All
+design records and source/model/script/config hashes are written before arms.
+Policies: FIFO, latest-pending replacement, one-pending drop-newest, periodic.
+Periodic keep=min(1,0.95/(fps*mean_service_seconds)) is computed only from the
+separate120-call calibration and frozen for all72 arms. No test-result tuning.
+
+Separate frontier sensitivity design after full72arms: June NVR only at80fps,
+fractions[0.50,0.65,0.80,0.95] x3policies(latest,drop-newest,periodic) x3fresh
+repetitions,36arms of60s. Fractions were fixed before full evaluation. Perform
+a new service calibration for metadata; it does not tune these fixed fractions.
+Use identical deterministic pre-admission sequences for the three policies.
+Latest and drop-newest can additionally discard arrivals when busy; periodic
+queues every pre-admitted arrival. Thus a shared offered fraction does NOT by
+itself establish equal total loss. Report actual retained counts and loss.
+If observed loss/retained counts do not match, do not claim an equal-loss causal
+advantage. Curves are descriptive sensitivity results on one source and GPU.
+
+Four5s smoke arms validated accounting, timestamp recording, queue depth,
+source/model matches and error handling. Smoke measurements do not contribute
+to reported inferential results or tune the grid.
+
+Every full arm preserves scheduled arrivals, actual arrival/start/finish times,
+detection counts, errors, queue maximum, discard IDs/reasons, and2s telemetry.
+Drain pending FIFO work and distinguish the drain from the shared AoI window.
+Delivered+discarded must equal scheduled count and partition every frame ID.
+Latest/drop-newest have at most one pending frame. Failed arms are preserved.
+
+Recompute p99 delivery latency, loss, deadline miss among delivered at33ms,
+service mean, jitter, completion gaps, and time-mean AoI from raw logs. Use a
+common observation window within each source/rate for policy/repeat comparison.
+Report all run-level metrics, mean/range, SD and separately the95% t interval
+for a mean with n=3,df=2. These are conditional within-device summaries and do
+not infer across farms/hardware. No frame-level pseudo-replicated confidence
+intervals, no universal hard deadline or animal-event accuracy claims.

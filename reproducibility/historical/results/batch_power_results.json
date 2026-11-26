@@ -1,0 +1,36 @@
+{
+  "run_timestamp": "20260607_204659",
+  "device": "NVIDIA GeForce RTX 4070 Ti",
+  "imgsz": 640,
+  "batch": 16,
+  "seconds_per_precision": 5.0,
+  "fp32": {
+    "frames": 464,
+    "wall_s": 5.101,
+    "fps": 91.0,
+    "power": {
+      "samples": 42,
+      "power_mean_w": 65.77,
+      "power_max_w": 70.07,
+      "util_mean_pct": 31.2
+    }
+  },
+  "fp16": {
+    "frames": 464,
+    "wall_s": 5.005,
+    "fps": 92.7,
+    "power": {
+      "samples": 41,
+      "power_mean_w": 46.73,
+      "power_max_w": 54.91,
+      "util_mean_pct": 25.9
+    }
+  },
+  "fp16_throughput_speedup": 1.019,
+  "fp16_power_savings_pct": 28.9,
+  "energy_per_frame_j": {
+    "fp32": 0.7227,
+    "fp16": 0.5041,
+    "fp16_savings_pct": 30.2
+  }
+}

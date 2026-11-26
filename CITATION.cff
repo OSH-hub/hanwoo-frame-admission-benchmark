@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code or these tables, please cite the article."
+title: "Freshness-aware frame admission benchmark for cattle monitoring on a shared GPU: code, logs and aggregate tables"
+type: software
+authors:
+  - family-names: Oh
+    given-names: Seunghong
+    affiliation: "ANCHOR Project Group, Konkuk University Glocal Campus"
+repository-code: "https://github.com/OSH-hub/hanwoo-frame-admission-benchmark"
+license: MIT
+date-released: "2026-11-26"
+preferred-citation:
+  type: unpublished
+  title: "Freshness-Aware Frame Admission for Hanwoo Monitoring on a Shared GPU"
+  authors:
+    - family-names: Oh
+      given-names: Seunghong
+  year: 2026
