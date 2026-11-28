@@ -1,16 +1,9 @@
-"""Summaries of the multi-camera native-rate load benchmark (see protocol.md).
-
-Usage: python analyze_realistic.py RUN_DIR [RUN_DIR ...] --out NEW_DIR
-Reads summaries.json and the per-arm arrival/delivery logs of each run folder. Writes one row per arm and
-one row per cell (mean and range over executions). No media, weights or animal data are involved.
-"""
 from pathlib import Path
 import argparse, csv, json
 import numpy as np
 
 
 def mean_age_ms(run, item):
-    """Time-average information age per camera, from each camera's first completion to the last scheduled arrival."""
     rows = list(csv.DictReader((run / f"{item['label']}_delivered.csv").open()))
     end = 1000.0 * item['duration_s']; ages = []
     for c in range(item['cameras']):
@@ -31,7 +24,7 @@ def main():
     for run in map(Path, a.runs):
         meta = json.loads((run / 'metadata.json').read_text())
         for item in json.loads((run / 'summaries.json').read_text()):
-            if item['foreign_process_detected']:                      # an unrelated GPU process overlapped this arm; it is not a measurement
+            if item['foreign_process_detected']:
                 excluded.append(dict(run=run.name, label=item['label'], order=item['order'])); continue
             age, per_cam = mean_age_ms(run, item)
             reasons = {}

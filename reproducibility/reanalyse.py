@@ -1,4 +1,3 @@
-"""Recompute historical measurements without changing canonical source files."""
 from pathlib import Path
 import json, hashlib, shutil, csv
 import numpy as np
@@ -56,8 +55,6 @@ pd.DataFrame(moderate).to_csv(OUT/'tables/historical_moderate_load.csv',index=Fa
 power=read_json(SRC/'results/batch_power_results.json')
 pd.DataFrame([dict(mode=m,frames=power[m]['frames'],wall_s=power[m]['wall_s'],fps=power[m]['fps'],power_w=power[m]['power']['power_mean_w'],energy_j=power['energy_per_frame_j'][m]) for m in ['fp32','fp16']]).to_csv(OUT/'tables/energy_short_runs.csv',index=False)
 
-# Correct chronological simulation: completions before the next arrival are
-# dispatched BEFORE evaluating that arrival's dropping decision.
 def simulate(svc,policy,T=1000/30):
     queue=[];busy=None;free=float('inf');rows=[];drop=[];i=0;n=len(svc)
     while i<n or busy is not None or queue:
@@ -88,11 +85,8 @@ for pol in ['fifo','latest']:
         miss_pct=100*np.mean(x>33),p99_ms=np.percentile(x,99),max_ms=x.max()))
     pd.DataFrame(r,columns=['frame','arrival_ms','start_ms','finish_ms']).to_csv(OUT/f'reproducibility/sim_{pol}.csv',index=False)
 pd.DataFrame(sim).to_csv(OUT/'tables/chronological_simulation.csv',index=False)
-# Counterexample to the withdrawn 2S-T expression: constant 40 ms service,
-# periodic 33.333 ms arrivals, latest-pending policy accumulates phase offset.
 r,d=simulate(np.full(40,40.),'latest');counter=float(max(r[:,3]-r[:,1]))
 assert counter>40+max(40-1000/30,0)
-# The valid 2S conservative bound is tested on deterministic random traces.
 for seed in range(30):
     s=np.random.default_rng(seed).uniform(1,150,300);r,d=simulate(s,'latest')
     assert max(r[:,3]-r[:,1])<=2*max(s)+1e-8

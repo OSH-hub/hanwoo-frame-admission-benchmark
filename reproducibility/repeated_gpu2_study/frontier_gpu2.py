@@ -1,7 +1,3 @@
-"""Prospectively fixed repeated P2 benchmark. GPU 2 exclusively.
-No raw media or learned weights are redistributed. Native video time is not
-the artificial arrival clock; event-window retention is a separate diagnostic.
-"""
 import os, json, csv, time, threading, multiprocessing as mp, hashlib, platform, subprocess, argparse, sys
 from pathlib import Path
 from collections import deque
@@ -46,7 +42,6 @@ def main():
         RUN = OUT/'smoke_gpu2'
     elif args.mode == 'frontier':
         RUN = OUT/'frontier_gpu2'
-    # Inspect only compute-app metadata; never terminate unrelated work.
     snapshot = subprocess.run(['nvidia-smi', '--query-compute-apps=pid,gpu_uuid,process_name,used_gpu_memory', '--format=csv,noheader'], capture_output=True, text=True, check=True).stdout
     assert EXPECTED_GPU_UUID not in snapshot, 'GPU2 is already in use; do not share with unrelated processes'
     import torch, cv2, ultralytics
@@ -84,7 +79,6 @@ def main():
         for j,policy in enumerate(POLICIES):
             design.append(dict(label=f'smoke_s1_80_{policy}',source=1,fps=80,policy=policy,duration_s=duration,order=j+1,replicate=0,admission_fraction=1.0))
     elif args.mode=='full':
-        # Complete all three 80-fps repeats first; then three 30-fps controls.
         for fps in [80,30]:
             for rep in range(1,4):
                 cells=[(s,p) for s in range(3) for p in POLICIES]
@@ -92,10 +86,6 @@ def main():
                     source_id,policy=cells[int(idx)]
                     design.append(dict(label=f'r{rep}_s{source_id}_{fps}_{policy}',source=source_id,fps=fps,policy=policy,duration_s=duration,order=len(design)+1,replicate=rep,admission_fraction=1.0))
     else:
-        # A separate, pre-specified sensitivity grid, not tuned to evaluation loss.
-        # On June source only: common deterministic pre-admission fractions,
-        # followed by latest / drop-newest / FIFO queueing. Periodic is FIFO
-        # after deterministic admission and is labelled periodic here.
         for rep in range(1,4):
             cells=[(p,f) for p in ['latest','drop_newest','periodic'] for f in [.5,.65,.8,.95]]
             for idx in rng.permutation(len(cells)):

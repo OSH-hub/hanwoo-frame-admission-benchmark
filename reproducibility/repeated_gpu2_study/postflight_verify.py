@@ -1,4 +1,3 @@
-"""Read-only postflight source/model/code verification after all 108 arms."""
 from pathlib import Path
 import hashlib,json,time
 import cv2

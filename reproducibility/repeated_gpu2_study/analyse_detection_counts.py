@@ -1,16 +1,3 @@
-"""Detection-count consequences of frame discards in the GPU 2 repeated arms.
-
-Uses stored logs only (no video, weights or GPU). For every source, the detector's
-box count for a replay index is taken from the delivered rows of all arms; the script
-first verifies that this count is identical wherever the same replay index was delivered.
-Counts of discarded frames are then recovered from that per-index reference.
-
-Outputs (written to --output, default fresh_detection_count_analysis/; copies are supplied in tables/):
-  detection_count_by_arm.csv      one row per arm
-  detection_count_summary.csv     mean and range over three executions
-
-Run from this directory:  python analyse_detection_counts.py [--output DIR]
-"""
 from pathlib import Path
 import argparse
 import json
@@ -33,7 +20,6 @@ def arm_files():
         yield f, int(rep[1:]), src, int(fps), pol
 
 
-# 1. Per-replay-index reference and determinism check.
 seen = {s: {} for s in CYCLE}
 checked_rows = 0
 for f, rep, src, fps, pol in arm_files():
@@ -48,7 +34,6 @@ for s, m in seen.items():
     assert len(m) == CYCLE[s], (s, len(m))
     ref[s] = np.array([m[i] for i in range(CYCLE[s])])
 
-# 2. Per-arm measures.
 rows = []
 for f, rep, src, fps, pol in arm_files():
     d = pd.read_csv(f).sort_values('finish_ms')
@@ -58,13 +43,11 @@ for f, rep, src, fps, pol in arm_files():
     kept = np.zeros(n, bool)
     kept[d['frame'].to_numpy()] = True
     assert kept.sum() == len(d)
-    # Segments: maximal runs of consecutive scheduled frames with an identical count.
     seg_id = np.concatenate([[0], np.cumsum(truth[1:] != truth[:-1])])
     n_seg = int(seg_id[-1]) + 1
     seg_len = np.bincount(seg_id, minlength=n_seg)
     seg_kept = np.bincount(seg_id, weights=kept, minlength=n_seg) > 0
     missed = ~seg_kept
-    # Displayed count: count of the frame most recently completed at each arrival instant.
     fin = d['finish_ms'].to_numpy()
     shown_all = ref[src][d['frame'].to_numpy() % CYCLE[src]]
     pos = np.searchsorted(fin, a['arrival_ms'].to_numpy(), side='right') - 1
@@ -72,7 +55,6 @@ for f, rep, src, fps, pol in arm_files():
     shown = shown_all[pos[valid]]
     err = shown - truth[valid]
     dc = d['n_detections']
-    # Longest run of consecutive discarded scheduled frames.
     longest = run = 0
     for k in kept:
         run = 0 if k else run + 1

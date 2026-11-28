@@ -1,7 +1,3 @@
-"""Prospectively fixed extended P2 benchmark. GPU 1 exclusively.
-No raw media or learned weights are redistributed. Native video time is not
-the artificial arrival clock; event-window retention is a separate diagnostic.
-"""
 import os, json, csv, time, threading, multiprocessing as mp, hashlib, platform, subprocess
 from pathlib import Path
 from collections import deque

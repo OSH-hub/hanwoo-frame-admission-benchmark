@@ -1,4 +1,3 @@
-"""Recompute extended-arm metrics and scientific figures from exact logs."""
 from pathlib import Path
 import json, re, hashlib
 import numpy as np

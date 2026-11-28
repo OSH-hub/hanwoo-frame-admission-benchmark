@@ -1,8 +1,3 @@
-"""Independent Linux/RTX 5090 replication; never overwrite the historical runs.
-Run with CUDA_VISIBLE_DEVICES=1. Frames/model are existing local research assets.
-FIFO vs historical pre-append admission vs strict latest-pending admission.
-All arms retain errors and exact timestamps; no measurement is simulated.
-"""
 import os, time, json, csv, threading, multiprocessing as mp, platform, hashlib
 from pathlib import Path
 from collections import deque
@@ -35,7 +30,6 @@ def main():
     def infer(i):
         result=model.predict(frames[i%len(frames)],imgsz=640,device=0,half=False,verbose=False)[0]
         boxes=result.boxes.xyxy.cpu().numpy()
-        # Deterministic CPU centroid/boundary-state proxy; no DB or network I/O.
         if len(boxes):
             xy=(boxes[:,:2]+boxes[:,2:])/2
             _=int(np.sum((xy[:,0]<50)|(xy[:,1]<50)))

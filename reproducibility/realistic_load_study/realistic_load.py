@@ -1,13 +1,3 @@
-"""Multi-camera native-rate load, heavier detector and training co-tenant benchmark. See protocol.md.
-
-No raw media or learned weights are redistributed. Arrival times are artificial replay times.
-
-Usage (measured stages need the GPU to be free of unrelated compute processes):
-  CUDA_VISIBLE_DEVICES=<n> python realistic_load.py --mode smoke|stage1|stage2 --out NEW_DIR \
-      --nvr-dir DIR --model-a best.pt --model-b x1280_best.pt --train-yaml data.yaml --train-cwd DIR \
-      --prior-metadata metadata.json --protocol protocol.md --gpu-uuid GPU-...
-  python realistic_load.py --mode dry --out NEW_DIR        # queue-logic test with simulated service, no GPU
-"""
 import os, json, csv, time, threading, multiprocessing as mp, hashlib, platform, subprocess, argparse, sys, signal
 from pathlib import Path
 from collections import deque
@@ -73,7 +63,7 @@ def main():
     tenant_kind = 'training' if a.mode == 'stage2' or (a.mode == 'smoke' and a.smoke_tenant == 'training') else 'synthetic'
     design = build_design(a.mode)
     if tenant_kind == 'training' and a.mode == 'smoke': design = [c for c in design if c['detector'] == 'A']
-    full_design_n = len(design); design = [c for c in design if c['order'] >= a.start_order]      # the order of the full design is unchanged
+    full_design_n = len(design); design = [c for c in design if c['order'] >= a.start_order]
     snapshot = ''
     if not dry:
         gpu = os.environ.get('CUDA_VISIBLE_DEVICES'); assert gpu and ',' not in gpu, 'exactly one visible GPU required'
@@ -128,7 +118,6 @@ def main():
                   model_sha256=model_hash, source_frame_sha256=[s['decoded_frames_sha256'] for s in source_info], precision='FP32', tf32_matmul=False, tf32_cudnn=True,
                   calibration_n=120, pre_tenant_warmup=30, per_arm_warmup=0)
     text = json.dumps(config, sort_keys=True, indent=2); (RUN / 'config.json').write_text(text); (RUN / 'config.sha256').write_text(hashlib.sha256(text.encode()).hexdigest() + '\n')
-    # ---------------------------------------------------------------- co-tenant
     stop = proc = tproc = None; allowed = {os.getpid()}
     if not dry and tenant_kind == 'synthetic':
         stop, ready = mp.Event(), mp.Event(); proc = mp.Process(target=synthetic_tenant, args=(stop, ready)); proc.start()
@@ -139,7 +128,7 @@ def main():
         tproc = subprocess.Popen([sys.executable, str((RUN / 'tenant_train.py').resolve()), a.train_yaml, str(tdir.resolve())], cwd=a.train_cwd,
                                  stdout=(RUN / 'tenant_stdout.log').open('w'), stderr=subprocess.STDOUT, start_new_session=True)
         allowed.add(tproc.pid); results = tdir / 'tenant' / 'results.csv'; t0 = time.time()
-        while True:                                                     # wait for one completed training epoch
+        while True:
             if tproc.poll() is not None: raise RuntimeError('training co-tenant exited')
             if results.exists() and len(results.read_text().strip().splitlines()) >= 2: break
             if time.time() - t0 > 900: raise RuntimeError('training co-tenant produced no epoch in 15 minutes')

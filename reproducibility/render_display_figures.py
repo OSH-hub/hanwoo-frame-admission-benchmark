@@ -1,11 +1,3 @@
-"""Render the article figures from the aggregate tables.
-
-Presentation only: every plotted coordinate is read from the CSV files in tables/.
-No timing value is recomputed. Figure 1 is a schematic drawn from the Methods text.
-
-Usage (from the repository root):
-    python reproducibility/render_display_figures.py --tables tables --out new_figures
-"""
 from pathlib import Path
 import argparse
 import numpy as np
@@ -43,12 +35,10 @@ def arrow(ax, x0, y0, x1, y1, **kw):
 
 
 def schematic(out):
-    """Figure 1: benchmark pipeline (a) and the four admission policies (b)."""
     fig = plt.figure(figsize=(7.2, 5.0))
     ax = fig.add_axes([0, 0, 1, 1]); ax.set_xlim(0, 1); ax.set_ylim(0, 1); ax.axis('off')
     ax.text(0.005, 0.975, 'a', fontsize=10, fontweight='bold', va='top')
     ax.text(0.005, 0.385, 'b', fontsize=10, fontweight='bold', va='top')
-    # panel a: pipeline, left to right
     y, h = 0.70, 0.235
     xs = [0.03, 0.225, 0.42, 0.615, 0.81]; w = 0.16
     box(ax, xs[0], y, w, h, 'Prerecorded\nsources',
@@ -63,19 +53,15 @@ def schematic(out):
         ['arrival, service', 'start, completion', 'per delivered frame'])
     for i in range(4):
         arrow(ax, xs[i] + w + 0.008, y + h / 2, xs[i + 1] - 0.008, y + h / 2)
-    # co-tenant below the worker
     box(ax, xs[3], 0.455, w, 0.15, 'Co-tenant process',
         ['matrix multiplication', 'or detector training'], fc='#FBEDE3', ec='#D55E00', dy=0.062)
     arrow(ax, xs[3] + w / 2, 0.612, xs[3] + w / 2, y - 0.008, color='#D55E00')
     ax.text(xs[3] + w / 2 + 0.012, 0.652, 'same GPU', fontsize=7, color='#D55E00', va='center')
-    # discarded frames below admission
     arrow(ax, xs[2] + w / 2, y - 0.008, xs[2] + w / 2, 0.56, color='#0072B2', ls='--')
     ax.text(xs[2] + w / 2, 0.545, 'discarded frames', fontsize=7.2, color='#0072B2', ha='center', va='top')
-    # endpoints below the records
     box(ax, xs[4], 0.455, w, 0.15, 'Endpoints',
         ['delivered latency,', 'information age,', 'frame loss'], fc='#EAF5EF', ec='#009E73', dy=0.058)
     arrow(ax, xs[4] + w / 2, y - 0.008, xs[4] + w / 2, 0.612, color='#009E73')
-    # panel b: policies
     rows = [('fifo', 'FIFO', 'Unbounded queue. Every arriving frame is enqueued and served in arrival order.'),
             ('latest', 'Latest-pending', 'One pending slot. An arriving frame replaces the waiting frame; the frame in service finishes.'),
             ('drop_newest', 'Drop-newest', 'One pending slot. An arriving frame is rejected while a frame is already waiting.'),
@@ -94,7 +80,6 @@ def schematic(out):
 
 
 def repeated(tables, out):
-    """Figure 2: all 72 repeated arms; shared logarithmic axis."""
     d = pd.read_csv(tables / 'repeated_all_arms.csv'); assert len(d) == 72
     names = {0: 'Cows2021', 1: 'June NVR', 2: 'November NVR'}; order = ['fifo', 'latest', 'drop_newest', 'periodic']
     fig, axes = plt.subplots(2, 3, figsize=(7.2, 4.6), sharey=True)
@@ -114,7 +99,6 @@ def repeated(tables, out):
 
 
 def grid(tables, out):
-    """Figure 3: admission-fraction grid; final discard percentage on the horizontal axis."""
     d = pd.read_csv(tables / 'admission_grid_all_arms.csv'); assert len(d) == 36
     style = {'latest': dict(marker='o', mfc='none', ms=9), 'drop_newest': dict(marker='s', mfc='none', ms=7),
              'periodic': dict(marker='^', ms=4.5)}
@@ -132,7 +116,6 @@ def grid(tables, out):
 
 
 def earlier(tables, out):
-    """Figure 4: initial replication at 80 arrivals/s (a) and the ten-minute alternating-load run (b, c)."""
     d = pd.read_csv(tables / 'initial_replication_all_arms.csv'); d = d[d.fps == 80]
     b = pd.read_csv(tables / 'gpu1_ten_minute_one_second_bins.csv')
     t = pd.read_csv(tables / 'gpu1_extension_gpu_telemetry.csv'); t = t[t.label == 's1_80_latest_burst600']

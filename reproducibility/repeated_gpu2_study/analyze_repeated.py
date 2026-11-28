@@ -1,4 +1,3 @@
-"""Recompute P2 run metrics from saved arrivals/completions; no source media/GPU."""
 from pathlib import Path
 import argparse, json, hashlib, math, io, platform
 import numpy as np

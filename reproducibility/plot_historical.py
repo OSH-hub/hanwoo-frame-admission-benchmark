@@ -1,4 +1,3 @@
-"""Redraw historical Figure 2 from the verified aggregate table, without reanalysis."""
 from pathlib import Path
 import pandas as pd
 import numpy as np

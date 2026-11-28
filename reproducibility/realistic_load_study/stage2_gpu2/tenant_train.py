@@ -1,4 +1,3 @@
-
 import sys
 from ultralytics import YOLO
 m = YOLO("yolov8n.yaml")

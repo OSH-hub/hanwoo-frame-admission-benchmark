@@ -1,4 +1,3 @@
-"""Presentation-only grid rendering: exact original coordinates, distinct markers."""
 from pathlib import Path
 import argparse,io
 import pandas as pd
